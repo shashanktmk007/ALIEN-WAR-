@@ -1,194 +1,104 @@
 <html>
-<head>
-<title>Tech7</title>
-<link rel="stylesheet" href="style.css">
-<style>
-  .left_box1{
-    width:50%;
-    height:70%;
-    /*background:green;*/
-    display: inline-block;
-}
-  #right_box1{
-    width:40%;
-    height:70%;
-    display:inline;
-/*    background:#fff;*/
-    align:centre;
-    float:right;
-  }
-  .bottom_box1{
-    display:block;
-    width:100%;
-    height:30%;
-    /*background:#321;*/
-  }
-  .button {
-    background-color:#4CAF50;
-    border:none;
-    color:white;
-    padding: 15px 27px;
-    align:centre;
-    text-align:centre;
-    text-decoration: none;
-    display:inline-block;
-    font-size:16px;
-    margin-left:auto;
+  <head>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </head>
+  <body>
+   <a-scene >
+      <a-assets>
+        <a-mixin id="cube" geometry="primitive: box"></a-mixin>
+        <a-mixin id="green" material="color: red"></a-mixin>
+		<a-mixin id="blue" material="color: white"></a-mixin>
+		<img id="my-texture" src="theif.jpeg">
+      </a-assets>
 
-  }
-.textarea{
-style="margin: 0px; width: 301px; height: 147px;"
-}
-</style>
-<script type="text/javascript">
-function shashank()
-{
-  console.log("in shashank");
-  var imgup=document.getElementById("dp");
-  imgup.src="https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-7119-1yi45ai_a4edc08e.jpeg?region=0%2C0%2C1000%2C1409";
-  var intr=document.getElementById("intrests");
-  intr.innerHTML="Reading\nCoding\nPlaying games\nWatching Movies\nSleeping\n";
-  console.log(intr.value);
-  var attr=document.getElementById("asp");
-  attr.innerHTML="Dont Know :P ";
-  var link_profile=document.getElementById("ahref");
-  link_profile.href="http://shashanktmk.swecha.io/shashank.swecha.io/";
-  console.log("in shashank");
-}
-function sandeep()
-{
-  console.log("in sandeep");
-  var imgup=document.getElementById("dp");
-  imgup.src="https://code.swecha.org/Sandeep.kannekanti/sandeep.swecha.io/raw/master/img.jpg";
-  var intr=document.getElementById("intrests");
-  intr.innerHTML="Riding Bikes\nTravelling Long distances\nReading\nCoding\npainting ";
-  console.log(intr.value);
-  var attr=document.getElementById("asp");
-  asp.innerHTML="to be a CEO of a company ";
-  var link_profile=document.getElementById("ahref");
-  link_profile.href="http://sandeep.kannekanti.swecha.io/sandeep.swecha.io/";
-  console.log("in sandeep");
-}function sai()
-{
-  console.log("in sai");
-  var imgup=document.getElementById("dp");
-  imgup.src="https://code.swecha.org/saigsai/saikumarg.swecha.io/raw/master/IMG_20180605_121856.jpg";
-  var intr=document.getElementById("intrests");
-  intr.innerHTML="The technical things around me dragged my interest into the field of technology. I am interested in learning and developing technologies that would help us grow in agriculture.Besides technical field am interested in Civil Services.";
-  console.log(intr.value);
-  var attr=document.getElementById("asp");
-  asp.innerHTML="Software Engineer";
-  var link_profile=document.getElementById("ahref");
-  link_profile.href="http://saigsai.swecha.io/saikumarg.swecha.io";
-  console.log("in sai");
-}function srikanth()
-{
-  console.log("in srikanth");
-  var imgup=document.getElementById("dp");
-  imgup.src="https://code.swecha.org/nenavathsrikanth/nenavathsrikanth.swecha.io/raw/master/NENAVATH%20SRIKANTH.jpg";
-  var intr=document.getElementById("intrests");
-  intr.innerHTML="Right From my childhood I was very much interested in technical things. I used to tamper the technical devices in the desire of knowledge of the technology used in it. As I grew up my  interest diverted towards the languages because language is the base for developing a technology. So using these languages I am interested in developing an app useful for the society.Literally speaking  am interested in coding and software development.";
-  console.log(intr.value);
-  var attr=document.getElementById("asp");
-  asp.innerHTML="Software Engineer";
-  var link_profile=document.getElementById("ahref");
-  link_profile.href="http://nenavathsrikanth.swecha.io";
-  console.log("in srikanth");
-}function mahesh()
-{
-  console.log("in mahesh");
-  var imgup=document.getElementById("dp");
-  imgup.src="https://code.swecha.org/Mahesh0321/mahesh.sewcha.io/raw/master/index.jpeg";/*fill*/
-  var intr=document.getElementById("intrests");
-  intr.innerHTML="Coding\nTreavelling long trips\nSleeping\nEating\nRiding Bikes";/*fill*/
-  console.log(intr.value);
-  var attr=document.getElementById("asp");
-  asp.innerHTML="Software Engineer";/*fill*/
-  var link_profile=document.getElementById("ahref");
-  link_profile.href="http://mahesh0321.swecha.io/mahesh.sewcha.io" ;/*fill*/
-  console.log("in mahesh");
-}function vidya()
-{
-  console.log("in vidya");
-  var imgup=document.getElementById("dp");
-  imgup.src="https://code.swecha.org/vidyadhari/vidya1/raw/master/vidya.jpeg";/*fill*/
-  var intr=document.getElementById("intrests");
-  intr.innerHTML="I'm interested in reading novels and writing stories.";/*fill*/
-  console.log(intr.value);
-  var attr=document.getElementById("asp");
-  asp.innerHTML="software engineer";/*fill*/
-  var link_profile=document.getElementById("ahref");
-  link_profile.href="https://code.swecha.org/vidyadhari/vidya1";/*fill*/
-  console.log("in vidya");
-}function hema()
-{
-  console.log("in hema");
-  var imgup=document.getElementById("dp");
-  imgup.src="https://code.swecha.org/hema123/hema.swecha.io/raw/master/hema.jpeg";/*fill*/
-  var intr=document.getElementById("intrests");
-  intr.innerHTML="Riding Bikes\nPlaying Cricket\nCooking\nReading\nSLEEPING\n";/*fill*/
-  console.log(intr.value);
-  var attr=document.getElementById("asp");
-  asp.innerHTML="Technical Head Of a company ";/*fill*/
-  var link_profile=document.getElementById("ahref");
-  link_profile.href="https://hema123.swecha.io/hema.swecha.io";/*fill*/
-  console.log("in hema");
-}
+      <a-entity id="game">
+        <a-entity position="0 2.2 4">
+          <a-entity camera look-controls wasd-controls>
+            <a-entity position="0 0 -3"
+                      geometry="primitive: ring; radiusOuter: 0.30;
+                                radiusInner: 0.20;"
+                      material="color: cyan; shader: flat"
+                      cursor="maxDistance: 30; fuse: true">
+                      <a-animation begin="click" easing="ease-in" attribute="scale"
+               fill="backwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
+  <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+               fill="backwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
 
-</script>
-</head>
-<body>
-<div class="left_box1">
-<img src="https://code.swecha.org/Sandeep.kannekanti/sandeep.swecha.io/raw/master/Screenshot%20from%202018-06-05%2003-07-06.png"alt="logo" width=213px height=211px>
-<h1>Why Tech7 ???</h1>
-<p>
-  Technology is always changing. As part of being members of Swecha's Summer of Data we should be learning
-  new technologies and keep ourselves updated with latest open source and freeware technologies avaliable and have
-  adequate knowledge about the latest trends the current market.
-  This gave us an idea to choose Tech.
-  As days in the week are 7, co lors in the rainbow are 7,
-  Layers in OSI model are 7 & Wonders of the World are 7
-  in the same way 7 should be a part of our team as well!!
-</p>
-</div>
-<div id="right_box1" heigth=70% width=30%>
-<table>
-  <tr>
-<img src= "https://openclipart.org/download/216165/fb_stormshadow.svg" alt="dp" id="dp" height=199px width=199px align="right"><br>
-</tr>
-<tr>
-  <td>
-  <label class ="labels">Intrests:</label>
-</td>
-<td>
-  <textarea id="intrests" style="margin: 0px; width: 301px; height: 99px;">
-  </textarea>
-</td>
-</tr>
-<tr>
-  <td>
-  <label class ="labels">Aspirtation:</label>
-</td>
-<td>
-  <textarea id="asp" style="margin: 0px; width: 300px; height: 60px;">
-  </textarea>
-</td>
-</tr>
-<tr>
-  <a href="" id="ahref"><img src= "https://upload.wikimedia.org/wikipedia/commons/1/18/GitLab_Logo.svg" alt="Git image" height=75px width=75px ></a><br>
-</tr>
-</table>
-</div>
-<p align=centre>
-<div class="bottom_box1">
-  <input type="button" name="Vidya" value="Vidya" onclick="vidya()" class="button">
-  <input type="button" name="Mahesh" value="Mahesh"onclick="mahesh()" class="button">
-  <input type="button" name="Sai" value="Sai"onclick="sai()" class="button">
-  <input type="button" name="Shashank" value="Shashank"onclick="shashank()" class="button">
-  <input type="button" name="Srikanth" value="Srikanth"onclick="srikanth()" class="button">
-  <input type="button" name="Sandeep" value="Sandeep"onclick="sandeep()" class="button">
-  <input type="button" name="Hema" value="Hema"onclick="hema()" class="button">
-</div>
-</p>
-</body>
+            </a-entity>
+          </a-entity>
+        </a-entity>
+
+
+        <a-sky color="#75b3ce"></a-sky>
+      
+        <a-entity id="intro" >
+          <a-text  id="IntroText" value="You are a prisonguard in the middle of a riot. Shot down the inmates when they appear in the windows." color="red" position="-2 3 0" scale="1.5 1.5 1.5"></a-text>
+          <a-entity position="0 1 0" id="mapmenu">
+            <a-entity  id="mapmenu" mixin="cube green" onclick= cls();> </a-entity>
+          </a-entity>
+        </a-entity>
+       
+        <a-entity id="points">
+          <a-text  id="PointsText" value="Inmates lost" color="#BBB" position="-30 10 25" scale="30 30 30" rotation="0 90 0"></a-text>
+          <a-entity  id="Point"></a-entity>
+        </a-entity>
+
+        <a-entity id="room">
+          <a-entity id="cell">
+          	<a-entity id="front">
+	            <a-plane id="1"  height="10" width="10" position="-30 30 -28" opacity="0.4" onclick=shoot(1); ></a-plane>
+	            <a-plane id="2"  height="10" width="10" position="-10 30 -28" opacity="0.4" onclick=shoot(2); ></a-plane>
+	            <a-plane id="3"  height="10" width="10" position="10 30 -28" opacity="0.4" onclick=shoot(3); ></a-plane>
+	            <a-plane id="4"  height="10" width="10" position="30 30 -28" opacity="0.4" onclick=shoot(4); ></a-plane>
+	            <a-plane id="5"  height="10" width="10" position="-30 10 -28" opacity="0.4" onclick=shoot(5); ></a-plane>
+	            <a-plane id="6"  height="10" width="10" position="-10 10 -28" opacity="0.4" onclick=shoot(6); ></a-plane>
+	            <a-plane id="7"  height="10" width="10" position="10 10 -28" opacity="0.4" onclick=shoot(7); ></a-plane>
+	            <a-plane id="8"  height="10" width="10" position="30 10 -28" opacity="0.4" onclick=shoot(8); ></a-plane>
+          	</a-entity>
+          	<a-entity id="right">
+	            <a-plane id="9"  height="10" width="10" position="40 25 -10" opacity="0.4" onclick=shoot(9); rotation="0 270 0"></a-plane>
+	            <a-plane id="10"  height="10" width="10" position="40 25 10" opacity="0.4" onclick=shoot(10); rotation="0 270 0"></a-plane>
+	            <a-plane id="11"  height="10" width="10" position="40 25 30" opacity="0.4" onclick=shoot(11); rotation="0 270 0"></a-plane>
+	            <a-plane id="12"  height="10" width="10" position="40 25 50" opacity="0.4" onclick=shoot(12); rotation="0 270 0"></a-plane>
+	            <a-plane id="13"  height="10" width="10" position="40 10 50" opacity="0.4" onclick=shoot(13); rotation="0 270 0"></a-plane>
+	            <a-plane id="14"  height="10" width="10" position="40 10 30" opacity="0.4" onclick=shoot(14); rotation="0 270 0"></a-plane>
+	            <a-plane id="15"  height="10" width="10" position="40 10 10" opacity="0.4" onclick=shoot(15); rotation="0 270 0"></a-plane>
+	            <a-plane id="16"  height="10" width="10" position="40 10 -10" opacity="0.4" onclick=shoot(16); rotation="0 270 0"></a-plane>
+          	</a-entity>
+          	<a-entity id="left">
+	            <a-plane id="17"  height="10" width="10" position="-40 25 -10" opacity="0.4" onclick=shoot(17); rotation="0 90 0"></a-plane>
+	            <a-plane id="18"  height="10" width="10" position="-40 25 10" opacity="0.4" onclick=shoot(18); rotation="0 90 0"></a-plane>
+	            <a-plane id="19"  height="10" width="10" position="-40 25 30" opacity="0.4" onclick=shoot(19); rotation="0 90 0"></a-plane>
+	            <a-plane id="20"  height="10" width="10" position="-40 25 50" opacity="0.4" onclick=shoot(20); rotation="0 90 0"></a-plane>
+	            <a-plane id="21"  height="10" width="10" position="-40 10 50" opacity="0.4" onclick=shoot(21); rotation="0 90 0"></a-plane>
+	            <a-plane id="22"  height="10" width="10" position="-40 10 30" opacity="0.4" onclick=shoot(22); rotation="0 90 0"></a-plane>
+	            <a-plane id="23"  height="10" width="10" position="-40 10 10" opacity="0.4" onclick=shoot(23); rotation="0 90 0"></a-plane>
+	            <a-plane id="24"  height="10" width="10" position="-40 10 -10" opacity="0.4" onclick=shoot(24); rotation="0 90 0"></a-plane>
+          	</a-entity>
+          	<a-entity id="behind">
+	            <a-plane id="25"  height="10" width="10" position="25 25 60" opacity="0.4" onclick=shoot(25); rotation="0 180 0"></a-plane>
+	            <a-plane id="26"  height="10" width="10" position="5 25 60" opacity="0.4" onclick=shoot(26); rotation="0 180 0"></a-plane>
+	            <a-plane id="27"  height="10" width="10" position="-15 25 60" opacity="0.4" onclick=shoot(27); rotation="0 180 0"></a-plane>
+	            <a-plane id="28"  height="10" width="10" position="-35 25 60" opacity="0.4" onclick=shoot(28); rotation="0 180 0"></a-plane>
+	            <a-plane id="29"  height="10" width="10" position="-35 10 60" opacity="0.4" onclick=shoot(29); rotation="0 180 0"></a-plane>
+	            <a-plane id="30"  height="10" width="10" position="-15 10 60" opacity="0.4" onclick=shoot(30); rotation="0 180 0"></a-plane>
+	            <a-plane id="31"  height="10" width="10" position="5 10 60" opacity="0.4" onclick=shoot(31); rotation="0 180 0"></a-plane>
+	            <a-plane id="32"  height="10" width="10" position="25 10 60" opacity="0.4" onclick=shoot(32); rotation="0 180 0"></a-plane>
+	            <a-plane id="33"  height="10" width="5" position="-4 -7.5 60" opacity="0.4" onclick=shoot(33); rotation="0 180 0"></a-plane>
+          	</a-entity>
+          </a-entity>
+            <a-plane color="#eab27e" height="60" width="100" position="0 15 -30" opacity="1" rotation="0 0 0"></a-plane>
+            <a-plane id="right" color="#eab27e" height="60" width="100" position="50 15 20" opacity="1" rotation="0 270 0"></a-plane>
+            <a-plane id="left" color="#eab27e" height="60" width="100" position="-50 15 20" opacity="1" rotation="0 90 0"></a-plane>
+            <a-plane id="behind" color="#eab27e" height="60" width="100" position="-0 15 70" opacity="1" rotation="0 180 0"></a-plane>
+            <a-plane color="#eab27e" height="350" width="250" position="0 -40 0" opacity="1" rotation="-90 0 0"></a-plane>
+
+
+        </a-entity>
+        <a-entity id="bullet"></a-entity>
+        <a-entity id="lostPrison"></a-entity>
+    </a-scene>
+    <script src="pingpong.js"></script>
+
+  </body>
 </html>
