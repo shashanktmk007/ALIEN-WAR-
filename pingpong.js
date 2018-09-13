@@ -1,9 +1,10 @@
 "use strict"
-console.log("ping is pong");
-
+//----------------------- variable declaration-----------------------------------//
 var point = 0;
 var remainpoints = 0;
 var firstround = true;
+var nr = 0;
+var nrList = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 
 var pointtext1='<a-text value="';
 var pointtext2='" color="#BBB" position="-20 0 0" scale="50 50 50" rotation="0 90 0"></a-text>';
@@ -17,12 +18,11 @@ function cls(){
 
 //***********************************//
 function coloring(i){
+    document.getElementById(i).setAttribute('opacity', '1');
 	document.getElementById(i).setAttribute('color', 'red');
 	document.getElementById(i).setAttribute('material', 'src: #my-texture');
 }
 
-var nr = 0;
-var nrList = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
 function PrisonGame(){
 	if (firstround){
 		rebelRandomizer();
@@ -71,5 +71,5 @@ function shoot(i) {
 	console.log(i, " shooted");
 	nrList[i] = -1;
 	point = point+1;
-	document.getElementById(i).setAttribute('color', '#514c4c');
+	document.getElementById(i).setAttribute('opacity','0');
 }
